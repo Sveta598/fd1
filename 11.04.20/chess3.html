@@ -7,8 +7,8 @@
     <style>
         .cell{
             outline: 1px solid black;
-            height: calc(800px / 8);
-            width: calc(800px / 8);
+            height: calc(100vmin / 8);
+            width: calc(100vmin / 8);
             float: left;
         }
         .light-cell{
@@ -17,91 +17,79 @@
         .dark-cell{
             background-color: brown;
         }
-        .row-even{float: left; width: 800px}
-        .row-odd{float: left; width: 800px} 
+        .row-even{float: left; width: 100vmin}
+        .row-odd{float: left; width: 100vmin} 
         .one{            
             background-image: url('chess.png');
-            background-repeat: no-repeat;
-            width: calc(301px / 6);
-            height:calc(96px / 2);
-            background-position:calc(-301px / 6 * 2) 0;
+            background-repeat: no-repeat;            
+            background-size: calc(100vmin / 8 * 6) calc(100vmin / 8 * 2);
+            background-position: calc(-100vmin / 8 * 2) 0;
         } 
         .two{            
             background-image: url('chess.png');
             background-repeat: no-repeat;
-            width: calc(301px / 6);
-            height:calc(96px / 2);
-            background-position:calc(-301px / 6 * 4) 0;
+            background-size: calc(100vmin / 8 * 6) calc(100vmin / 8 * 2);
+            background-position: calc(-100vmin / 8 * 4) 0;
         } 
         .three{            
             background-image: url('chess.png');
             background-repeat: no-repeat;
-            width: calc(301px / 6);
-            height:calc(96px / 2);
-            background-position:calc(-301px / 6 * 3) 0;
+            background-size: calc(100vmin / 8 * 6) calc(100vmin / 8 * 2);
+            background-position: calc(-100vmin / 8 * 3) 0;            
         } 
         .four{            
             background-image: url('chess.png');
-            background-repeat: no-repeat;
-            width: calc(301px / 6);
-            height:calc(96px / 2);
-            background-position:calc(-301px / 6 * 1) 0;
+            background-repeat: no-repeat;            
+            background-size: calc(100vmin / 8 * 6) calc(100vmin / 8 * 2);
+            background-position: calc(-100vmin / 8 * 1) 0;              
         } 
         .five {
             background-image: url('chess.png');
             background-repeat: no-repeat;
-            width: calc(301px / 6);
-            height:calc(96px / 2);
+            background-size: calc(100vmin / 8 * 6) calc(100vmin / 8 * 2);
             background-position:0 0;
         }
         .six {
             background-image: url('chess.png');
             background-repeat: no-repeat;
-            width: calc(301px / 6);
-            height:calc(96px / 2);
-            background-position:calc(-301px / 6 * 5) 0;           
+            background-size: calc(100vmin / 8 * 6) calc(100vmin / 8 * 2);
+            background-position: calc(-100vmin / 8 * 5) 0;          
         }
         .seven {
             background-image: url('chess.png');
-            background-repeat: no-repeat;
-            width: calc(301px / 6);
-            height:calc(96px / 2);
-            background-position:calc(-301px / 6 * 5) calc(-96px / 2 * 5); 
+            background-repeat: no-repeat;            
+            background-size: calc(100vmin / 8 * 6) calc(100vmin / 8 * 2);
+            background-position:calc(-100vmin / 8 * 5) calc(-100vmin / 8 * 5); 
         }
         .eight {
             background-image: url('chess.png');
             background-repeat: no-repeat;
-            width: calc(301px / 6);
-            height: calc(96px / 2);
-            background-position: calc(-301px / 6 * 2) calc(-96px / 2 * 2);
+            background-size: calc(100vmin / 8 * 6) calc(100vmin / 8 * 2);
+            background-position: calc(-100vmin / 8 * 2) calc(-100vmin / 8 * 2);
         }
         .nine {
             background-image: url('chess.png');
             background-repeat: no-repeat;
-            width: calc(301px / 6);
-            height: calc(96px / 2);
-            background-position: calc(-301px / 6 * 4) calc(-96px / 2 * 4);
+            background-size: calc(100vmin / 8 * 6) calc(100vmin / 8 * 2);
+            background-position: calc(-100vmin / 8 * 4) calc(-100vmin / 8 * 4);
         }
         .ten {
             background-image: url('chess.png');
             background-repeat: no-repeat;
-            width: calc(301px / 6);
-            height: calc(96px / 2);
-            background-position:calc(-301px / 6 * 3) calc(-96px / 2 * 3);
+            background-size: calc(100vmin / 8 * 6) calc(100vmin / 8 * 2);            
+            background-position:calc(-100vmin / 8 * 3) calc(-100vmin / 8 * 3);
         }
         .eleven {
             background-image: url('chess.png');
             background-repeat: no-repeat;
-            width: calc(301px / 6);
-            height:calc(96px / 2);
-            background-position:calc(-301px / 6 * 1) calc(-96px / 2 * 1);
+            background-size: calc(100vmin / 8 * 6) calc(100vmin / 8 * 2); 
+            background-position:calc(-100vmin / 8 * 1) calc(-100vmin / 8 * 1);
         }
         .twelve {
             background-image: url('chess.png');
             background-repeat: no-repeat;
-            width: calc(301px / 6);
-            height:calc(96px / 2);
-            background-position:0 calc(-96px / 2 * 1);
+            background-size: calc(100vmin / 8 * 6) calc(100vmin / 8 * 2); 
+            background-position:0 calc(-100vmin / 8 * 1);
         }     
         </style>
 
