@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .cell{
+            outline: 1px solid black;           
+            height: calc(420px / 8);
+            width: calc(420px / 8);                       
+        }
+        .light-cell{
+            background-color: yellow;
+        }
+        .dark-cell{
+            background-color: brown;
+        }
+        .row-even{float: left;}
+        .row-odd{float: left;} 
+        .one{            
+            background-image: url('chess.png');
+            background-repeat: no-repeat;
+            width: calc(301px / 6);
+            height:calc(96px / 2);
+            background-position:calc(-301px / 6 * 2) 0;
+        } 
+        .two{            
+            background-image: url('chess.png');
+            background-repeat: no-repeat;
+            width: calc(301px / 6);
+            height:calc(96px / 2);
+            background-position:calc(-301px / 6 * 4) 0;
+        } 
+        .three{            
+            background-image: url('chess.png');
+            background-repeat: no-repeat;
+            width: calc(301px / 6);
+            height:calc(96px / 2);
+            background-position:calc(-301px / 6 * 3) 0;
+        } 
+        .four{            
+            background-image: url('chess.png');
+            background-repeat: no-repeat;
+            width: calc(301px / 6);
+            height:calc(96px / 2);
+            background-position:calc(-301px / 6 * 1) 0;
+        } 
+        .five {
+            background-image: url('chess.png');
+            background-repeat: no-repeat;
+            width: calc(301px / 6);
+            height:calc(96px / 2);
+            background-position:0 0;
+        }
+        .six {
+            background-image: url('chess.png');
+            background-repeat: no-repeat;
+            width: calc(301px / 6);
+            height:calc(96px / 2);
+            background-position:calc(-301px / 6 * 5) 0;           
+        }
+        .seven {
+            background-image: url('chess.png');
+            background-repeat: no-repeat;
+            width: calc(301px / 6);
+            height:calc(96px / 2);
+            background-position:calc(-301px / 6 * 5) calc(-96px / 2 * 5); 
+        }
+        .eight {
+            background-image: url('chess.png');
+            background-repeat: no-repeat;
+            width: calc(301px / 6);
+            height: calc(96px / 2);
+            background-position: calc(-301px / 6 * 2) calc(-96px / 2 * 2);
+        }
+        .nine {
+            background-image: url('chess.png');
+            background-repeat: no-repeat;
+            width: calc(301px / 6);
+            height: calc(96px / 2);
+            background-position: calc(-301px / 6 * 4) calc(-96px / 2 * 4);
+        }
+        .ten {
+            background-image: url('chess.png');
+            background-repeat: no-repeat;
+            width: calc(301px / 6);
+            height: calc(96px / 2);
+            background-position:calc(-301px / 6 * 3) calc(-96px / 2 * 3);
+        }
+        .eleven {
+            background-image: url('chess.png');
+            background-repeat: no-repeat;
+            width: calc(301px / 6);
+            height:calc(96px / 2);
+            background-position:calc(-301px / 6 * 1) calc(-96px / 2 * 1);
+        }
+        .twelve {
+            background-image: url('chess.png');
+            background-repeat: no-repeat;
+            width: calc(301px / 6);
+            height:calc(96px / 2);
+            background-position:0 calc(-96px / 2 * 1);
+        }
+    </style>
+
+</head>
+<body>
+    <div style="width:420px">
+    <div class="row-odd">
+    <div class="cell light-cell one"></div><div class="cell dark-cell two"></div><div class="cell light-cell three"></div><div class="cell dark-cell five"></div><div class="cell light-cell four"></div><div class="cell dark-cell three"></div><div class="cell light-cell two"></div><div class="cell dark-cell one"></div>
+    </div>
+    <div class="row-even">
+    <div class="cell dark-cell six"></div><div class="cell light-cell six"></div><div class="cell dark-cell six"></div><div class="cell light-cell six"></div><div class="cell dark-cell six"></div><div class="cell light-cell six"></div><div class="cell dark-cell six"></div><div class="cell light-cell six"></div>
+    </div>
+    <div class="row-odd">
+    <div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div>
+    </div>
+    <div class="row-even">
+    <div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div>
+    </div>
+    <div class="row-odd">
+    <div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div>
+    </div>
+    <div class="row-even">
+    <div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div>
+    </div>
+    <div class="row-odd">
+    <div class="cell light-cell seven"></div><div class="cell dark-cell seven"></div><div class="cell light-cell seven"></div><div class="cell dark-cell seven"></div><div class="cell light-cell seven"></div><div class="cell dark-cell seven"></div><div class="cell light-cell seven"></div><div class="cell dark-cell seven"></div>
+    </div>
+    <div class="row-even">
+    <div class="cell dark-cell eight"></div><div class="cell light-cell nine"></div><div class="cell dark-cell ten"></div><div class="cell light-cell twelve"></div><div class="cell dark-cell eleven"></div><div class="cell light-cell ten"></div><div class="cell dark-cell nine"></div><div class="cell light-cell eight"></div>
+    </div>
+    </div>
+</body>
+</html>
