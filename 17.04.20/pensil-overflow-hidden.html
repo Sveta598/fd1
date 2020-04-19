@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дюбка карандаша с помощью градиентов</title>
+    <style>
+        .pick {
+            background-image: radial-gradient(circle at center center,
+            #000 0, #000 20px, #ff0 20px);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: relative;
+            top: 80px;
+            left: 80px;                       
+        }
+        .wrapper {
+            width: 150px;
+            height: 150px;
+            transform: rotate(-45deg);
+            position: relative;
+            overflow: hidden;  
+            left: calc(100% - 130px);                          
+        }
+        .pen {
+            width: calc(100% - 175px);
+            background-image:
+            linear-gradient(transparent 0, transparent 20px,
+            #ff0 20px, #ff0 40px,
+            #dd0 40px, #dd0 110px,
+            #ff0 110px, #ff0 130px,
+            transparent 130px)
+        }
+    </style>
+</head>
+<body>
+    <div class="pen">
+        <div class="wrapper">
+            <div class="pick"></div>
+        </div>
+    </div>    
+</body>
+</html>
