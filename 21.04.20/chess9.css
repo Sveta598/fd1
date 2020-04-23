@@ -82,7 +82,7 @@ body>div>div:nth-child(-2n+48):not(:nth-child(-n+40)),
 body>div>div:nth-child(-2n+55):not(:nth-child(-n+48)),
 body>div>div:nth-child(-2n+64):not(:nth-child(-n+56))
 {
-    background: red;    
+    background-color: red;    
 }
 
 /*вставляем фигурки*/
