@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    width: 100vmin;
+    height: 100vmin;
+}
+.main-circle {
+    position: absolute;
+    top: 5vmin;
+    left: 10vmin;
+    width: 80vmin;
+    height: 80vmin;
+    border-radius: 50%;
+    border: 3vmin solid #000;
+}
+.upper-circle1 {
+    position: absolute;
+    top: 20vmin;
+    left: 15vmin;
+    width: 12vmin;
+    height: 12vmin;
+    border-radius: 50%;
+    border: 3vmin solid #000;
+    z-index: 100;
+}
+.upper-circle2 {
+    position: absolute;
+    top: 20vmin;
+    right: 15vmin;
+    width: 12vmin;
+    height: 12vmin;
+    border-radius: 50%;
+    border: 3vmin solid #000;
+    z-index: 100;
+}
+.lower-circle {
+    position: absolute;
+    bottom: 10vmin;
+    left: 10vmin;
+    right: 10vmin;
+    top: 10vmin;
+    border-radius: 50%;
+    border: 3vmin solid #000;
+}
+.hide {
+    position: absolute;
+    bottom: 40vmin;
+    left: 10vmin;
+    right: 10vmin;
+    top: 10vmin;
+    background: #fff;
+    border-radius: 50% 50% 0 0;
+}
+.hide2 {
+    position: absolute;
+    bottom: 42vmin;
+    left: 10vmin;
+    right: 10vmin;
+    top: 28vmin;
+    background: #fff;
+    z-index: 102;
+}
+.edge1 {
+    position: absolute;    
+    left: 15vmin;   
+    top: 26vmin;
+    z-index: 104;
+    width: 3.1vmin;
+    height: 3.1vmin;
+    background:#000;    
+    border-radius: 50%;
+}
+.edge2 {
+    position: absolute;    
+    left: 29.9vmin;   
+    top: 26vmin;
+    z-index: 104;
+    width: 3.1vmin;
+    height: 3.1vmin;
+    background:#000;    
+    border-radius: 50%;
+}
+.edge3 {
+    position: absolute;    
+    right: 29.9vmin;   
+    top: 26vmin;
+    z-index: 104;
+    width: 3.1vmin;
+    height: 3.1vmin;
+    background:#000;    
+    border-radius: 50%;
+}
+.edge4 {
+    position: absolute;    
+    right: 15vmin;   
+    top: 26vmin;
+    z-index: 104;
+    width: 3.1vmin;
+    height: 3.1vmin;
+    background:#000;    
+    border-radius: 50%;
+}
+.edge5 {
+    position: absolute;    
+    left: 10vmin;   
+    bottom: 38vmin;
+    z-index: 104;
+    width: 3.1vmin;
+    height: 3.1vmin;
+    background:#000;    
+    border-radius: 50%;
+}
+.edge6 {
+    position: absolute;    
+    right: 10vmin;   
+    bottom: 38vmin;
+    z-index: 104;
+    width: 3.1vmin;
+    height: 3.1vmin;
+    background:#000;    
+    border-radius: 50%;
+}

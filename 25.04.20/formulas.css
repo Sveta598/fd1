@@ -1,0 +1,13 @@
+div {
+    font-size: 1.5em;
+}
+.upper {
+    font-size: 0.5em;
+    position: relative;
+    bottom: 1em;
+}
+.lower {
+    font-size: 0.5em;
+    position: relative;
+    top: 0.5em;
+}
