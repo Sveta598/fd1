@@ -5,25 +5,25 @@
      overflow: hidden;
  }
  
-/*input[name="slider"] {
+[name=sliders] {
     position: absolute;
     visibility: hidden;
-}*/ /*Прячем кружочки сверху*/
+}
+  .slide-one,
+  .slide-two,
+  .slide-three,
+  .slide-four,
+  .slide-five {
+    display: none;
+  } 
 
-/*.slide
-   {
-   display: none;
-  }*/ /*Изображения вообще не отображаются*/
-
-
-
-[type=radio]:nth-of-type(1):checked ~ .slide-one,
-  [type=radio]:nth-of-type(2):checked ~ .slide-two,
-  [type=radio]:nth-of-type(3):checked ~ .slide-three,
-  [type=radio]:nth-of-type(4):checked ~ .slide-four,
-  [type=radio]:nth-of-type(5):checked ~ .slide-five {
+  [type=radio]:nth-of-type(1):checked ~ div>.slide-one,
+  [type=radio]:nth-of-type(2):checked ~ div>.slide-two,
+  [type=radio]:nth-of-type(3):checked ~ div>.slide-three,
+  [type=radio]:nth-of-type(4):checked ~ div>.slide-four,
+  [type=radio]:nth-of-type(5):checked ~ div>.slide-five {
    display: block;
-  } /*Изображения отображаются, но нет связи с навигацией*/
+  } 
 
 .prevSlide {
     width: 0;
@@ -33,7 +33,7 @@
     position: absolute;
     top: 98px;
     left: 0;
-} /*Не переключает изображения*/
+} 
 .nextSlide {
     width: 0;
     height: 0;
@@ -42,7 +42,7 @@
     position: absolute;
     top: 98px;
     left: 198px;
-} /*Не переключает изображения*/
+} 
 
 .pins>[for=one] {
     width: 10px;
@@ -50,7 +50,7 @@
     background-color: red;
     position: absolute;
     border-radius: 50%;
-    top: 198px;
+    top: 188px;
     left: 66px;
 }
 .pins>[for=two] {
@@ -59,7 +59,7 @@
     background-color: red;
     position: absolute;
     border-radius: 50%;
-    top: 198px;
+    top: 188px;
     left: 86px;
 }
 .pins>[for=three] {
@@ -68,7 +68,7 @@
     background-color: red;
     position: absolute;
     border-radius: 50%;
-    top: 198px;
+    top: 188px;
     left: 106px;
 }
 .pins>[for=four] {
@@ -77,7 +77,7 @@
     background-color: red;
     position: absolute;
     border-radius: 50%;
-    top: 198px;
+    top: 188px;
     left: 126px;
 }
 .pins>[for=five] {
@@ -86,14 +86,15 @@
     background-color: red;
     position: absolute;
     border-radius: 50%;
-    top: 198px;
+    top: 188px;
     left: 146px;
 }
   
-[type=radio]:nth-of-type(1):checked ~ .pins>[for=one],
-[type=radio]:nth-of-type(2):checked ~ .pins>[for=two], 
-[type=radio]:nth-of-type(3):checked ~ .pins>[for=three], 
-[type=radio]:nth-of-type(4):checked ~ .pins>[for=four], 
-[type=radio]:nth-of-type(5):checked ~ .pins>[for=five] {
+[type=radio]:nth-of-type(1):checked ~ div>.pins>[for=one],
+[type=radio]:nth-of-type(2):checked ~ div>.pins>[for=two], 
+[type=radio]:nth-of-type(3):checked ~ div>.pins>[for=three], 
+[type=radio]:nth-of-type(4):checked ~ div>.pins>[for=four], 
+[type=radio]:nth-of-type(5):checked ~ div>.pins>[for=five] {
     background-color: blue;
-} /*кружок не делается синим*/
+} 
+
