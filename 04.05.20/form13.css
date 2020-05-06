@@ -1,0 +1,58 @@
+section {
+    width: 100px;
+    height: 100px;
+    outline: 1px solid blue;
+    display: inline-block;
+  }
+  
+  /*а тут свяжем наши состояния checked с нашими секциями*/
+  #example1:checked ~ #section1 {
+    outline: 2px solid red;
+  }
+  
+  #example2:checked ~ #section2 {
+    outline: 2px solid red;
+  }
+  
+  #example3:checked ~ #section3 {
+    outline: 2px solid red;
+  }
+  
+  #example4:checked ~ #section4 {
+    outline: 2px solid red;
+  }
+  
+  #change-state>label {
+    display: inline-block;
+    vertical-align: top;
+    height: 50px;
+    outline: 1px solid green;
+  }
+  
+  #example1:checked ~ #change-state>label {
+    float: right;
+  }
+  
+  #example2:checked ~ #change-state>label {
+    display: inline;
+  }
+  
+  #example3:checked ~ #change-state>label[for=example3]::after {
+    content: " выбран а другие лейблы будут спрятаны";
+  }
+  
+  #example3:checked ~ #change-state>label[for=example3] {
+    outline: 3px solid blue;
+  }
+  
+  #example3:checked ~ #change-state>label:not([for=example3]) {
+    visibility: hidden;
+    /*
+    можно еще 
+    opacity: 0;
+    */
+  }
+  
+  #example4:checked ~ * {
+    display: none;
+  }

@@ -1,0 +1,23 @@
+section {
+    width: 100px;
+    height: 100px;
+    outline: 1px solid blue;
+    display: inline-block;
+  }
+  
+  /*а тут свяжем наши состояния checked с нашими секциями*/
+  #example1:checked ~ #section1 {
+    outline: 2px solid red;
+  }
+  
+  #example2:checked ~ #section2 {
+    outline: 2px solid red;
+  }
+  
+  #example3:checked ~ #section3 {
+    outline: 2px solid red;
+  }
+  
+  #example4:checked ~ #section4 {
+    outline: 2px solid red;
+  }

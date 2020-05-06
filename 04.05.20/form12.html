@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form12.css">
+</head>
+<body>
+    <h2>Переключая radiobutton мы меняем состояние элементов radiobutton</h2>
+<p>
+А с помощью селекторов css выбираем нужные элементы, чтобы назначить им соответствующий внешний вид
+</p>
+
+<input type="radio" id="example1" name="slider">
+<input type="radio" id="example2" name="slider">
+<input type="radio" id="example3" name="slider">
+<input type="radio" id="example4" name="slider">
+
+<br>
+
+<section id="section1"></section>
+<section id="section2"></section>
+<section id="section3"></section>
+<section id="section4"></section>
+
+<p>
+Но для переключения radio можно же использовать label!
+</p>
+<label for="example1">Первый</label>
+<label for="example2">Второй</label>
+<label for="example3">Третий</label>
+<label for="example4">Четвертый</label>
+
+<p>
+Да и размещать label можно где хотим!
+</p>
+<div>
+  <label for="example1">Еще раз Первый</label> |
+  <label for="example2">Еще раз Второй</label> |
+  <label for="example3">Еще раз Третий</label> |
+  <label for="example4">Еще раз Четвертый</label>
+</div>
+
+<p>
+Кроме того, никто не мешает нам менять стили самих лейблов в зависимости от состояния radio
+</p>
+
+<div id="change-state">
+  <label for="example1">Первый</label> |
+  <label for="example2">Второй</label> |
+  <label for="example3">Третий</label> |
+  <label for="example4">Четвертый</label>
+</div>
+</body>
+</html>

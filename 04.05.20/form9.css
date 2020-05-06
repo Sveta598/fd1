@@ -1,0 +1,19 @@
+/*прячем все спаны в лейбле в соседнем диве*/
+#example1 + div>label>span {
+    display: none;
+  }
+  
+  /*а #isUnchecked показываем*/
+  #example1 + div>label>span#isUnchecked {
+    display: initial;
+  }
+  
+  /*а теперь скрываем наш #isUnchecked при установленной галочке*/
+  #example1:checked + div>label>span#isUnchecked {
+    display: none;
+  }
+  
+  /*а теперь показываем наш #isСhecked при установленной галочке*/
+  #example1:checked + div>label>span#isChecked {
+    display: initial;
+  }

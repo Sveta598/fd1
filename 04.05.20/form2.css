@@ -1,0 +1,26 @@
+[type=checkbox] {
+    display: none;
+  }
+  
+  label {
+    line-height: 2em;
+  }
+  
+  .my-checkbox {
+    vertical-align: top;
+    display: none;
+    width: 2em;
+    height: 2em;
+    border: 1px solid blue;
+    border-radius: 2px;
+    line-height: 2em;
+    text-align: center;
+  }
+  
+  [type=checkbox]:checked ~ .my-checkbox-checked {
+    display: inline-block;
+  }
+  
+  [type=checkbox]:not(:checked) ~ .my-checkbox-unchecked {
+    display: inline-block;
+  }
