@@ -1,53 +1,235 @@
-/*Изменение валют*/
-[name=currency] {
+[data-element=calculator] {
+    width: 580px; 
+    height: 530px; 
+    overflow: hidden; 
+    position: relative; 
+    font-family: Arial;
+    font-size: 18px;
+}
+.calc {
+    position: absolute; 
+    width: 580px; 
+    height: 530px; 
+    background: url('assets/img/sprite.png') no-repeat;
+}
+.ipad {
+    position: absolute; 
+    width: 580px; 
+    height: 530px; 
+    background: url('assets/img/sprite.png') 0px -2120px no-repeat;
+    opacity: 1;
+}
+.car {
+    position: absolute; 
+    width: 580px; 
+    height: 530px; 
+    background: url('assets/img/sprite.png') 0px -1590px no-repeat;
+    opacity: 1;
+}
+.house {
     position: absolute;
-    visibility: hidden;
-} 
-
-.money {
-    display: none;
-  }
-
-  [name=currency]:nth-of-type(1):checked ~ .currency-one,
-  [name=currency]:nth-of-type(2):checked ~ .currency-two {
-   display: block;
-  } 
-
-  /*.prevCurrency {
-    position: absolute; 
-    width: 20px; 
-    height: 6px; 
-    top: -6px; 
-    left: 8px; 
-    cursor: pointer;
-  }
-
-  .nextCurrency {
-    position: absolute; 
-    width: 20px; 
-    height: 6px; 
-    bottom: -6px; 
-    left: 8px; 
-    cursor: pointer;
-  }*/
-
-.money2 {
-    display: none;
+    width: 580px; 
+    height: 530px; 
+    background: url('assets/img/sprite.png') 0px -1060px no-repeat;
+    opacity: 1;
 }
-  
-[name=currency]:nth-of-type(1):checked ~ .money2>[for=rub],
-[name=currency]:nth-of-type(2):checked ~ .money2>[for=usd] {
-    display: block;
-} 
-
+.plane {
+    position: absolute; 
+    width: 580px; 
+    height: 530px; 
+    background: url('assets/img/sprite.png') 0px -530px no-repeat;
+    opacity: 1;
+}
+.month {
+    position: absolute; 
+    top: 101px; 
+    left: 360px; 
+    height: 24px; 
+    width: 24px; 
+    font-weight: normal; 
+    color: rgb(229, 248, 176); 
+    line-height: 24px; 
+    text-align: center;
+}
+.summ {
+    position: absolute; 
+    font-size: 18px; 
+    left: 203px; 
+    top: 50px; 
+    border: none; 
+    outline: none; 
+    background: transparent; 
+    height: 24px; 
+    width: 70px; 
+    text-align: right;
+}
 .money3 {
-    display: none;
+    position: absolute; 
+    top: 18px; 
+    left: 340px; 
+    height: 24px; 
+    width: 140px; 
+    font-weight: normal; 
+    color: rgb(229, 248, 176); 
+    line-height: 24px; 
+    text-align: center;
 }
-
-[name=currency]:nth-of-type(1):checked ~ .money3>[for=rub],
-[name=currency]:nth-of-type(2):checked ~ .money3>[for=usd] {
-    display: block;
-} 
+.six-em {
+    font-size: 0.6em;
+}
+.eight-em {
+    font-size: 0.8em;
+}
+.nine-em {
+    font-size: 0.9em;
+}
+.money {
+    position: absolute; 
+    top: 51px; 
+    left: 292px; 
+    height: 24px;
+    width: 35px; 
+    font-weight: normal; 
+    color: rgb(229, 248, 176); 
+    line-height: 24px;
+}
+.cur {
+    color: rgb(229, 248, 176); 
+    position: absolute; 
+    left: 267px; 
+    top: 103px;
+}
+.first-line {
+    position: absolute; 
+    width: 115px; 
+    height: 20px; 
+    top: 102px; 
+    right: 330px; 
+    font-weight: normal; 
+    color: rgb(229, 248, 176); 
+    line-height: 20px; 
+    text-align: right;
+}
+.second-line {
+    position: absolute; 
+    width: 115px; 
+    height: 20px; 
+    top: 148px; 
+    right: 330px; 
+    font-weight: normal; 
+    color: rgb(229, 248, 176); 
+    line-height: 20px; 
+    text-align: right;
+}
+.second-row {
+    font-size: 12px; 
+    position: absolute; 
+    width: 115px; 
+    height: 20px; 
+    top: 148px; 
+    left: 266px; 
+    font-weight: normal; 
+    color: rgb(229, 248, 176); 
+    line-height: 20px;
+}
+.third-line {
+    position: absolute; 
+    width: 115px; 
+    height: 20px; 
+    top: 170px; 
+    right: 330px; 
+    font-weight: normal; 
+    color: rgb(229, 248, 176); 
+    line-height: 20px; 
+    text-align: right;
+}
+.third-row {
+    font-size: 12px; 
+    position: absolute; 
+    width: 115px; 
+    height: 20px; 
+    top: 170px; 
+    left: 266px; 
+    font-weight: normal; 
+    color: rgb(229, 248, 176);
+    line-height: 20px;
+}
+.fourth-line {
+    position: absolute;
+    width: 115px; 
+    height: 20px; 
+    top: 192px; 
+    right: 330px; 
+    font-weight: normal; 
+    color: rgb(229, 248, 176); 
+    line-height: 20px; 
+    text-align: right;
+}
+.fourth-row {
+    font-size: 12px; 
+    position: absolute; 
+    width: 115px; 
+    height: 20px; 
+    top: 192px; 
+    left: 266px; 
+    font-weight: normal; 
+    color: rgb(229, 248, 176); 
+    line-height: 20px
+}
+.fifth-line {
+    position: absolute;
+    width: 115px; 
+    height: 20px; 
+    top: 214px; 
+    right: 330px; 
+    font-weight: normal; 
+    color: rgb(229, 248, 176); 
+    line-height: 20px; 
+    text-align: right;
+}
+.fifth-row {
+    font-size: 12px; 
+    position: absolute; 
+    width: 115px; 
+    height: 20px; 
+    top: 214px; 
+    left: 266px; 
+    font-weight: normal; 
+    color: rgb(229, 248, 176); 
+    line-height: 20px;
+}
+.sixth-line {
+    position: absolute; 
+    width: 115px;
+    height: 20px;
+    top: 236px; 
+    right: 330px; 
+    font-weight: normal; 
+    color: rgb(229, 248, 176); 
+    line-height: 20px; 
+    text-align: right;
+}
+.sixth-row {
+    font-size: 12px; 
+    position: absolute; 
+    width: 115px; 
+    height: 20px; 
+    top: 236px; 
+    left: 266px; 
+    font-weight: normal; 
+    color: rgb(229, 248, 176); 
+    line-height: 20px;
+}
+.percents {
+    position: absolute; 
+    top: 51px; 
+    left: 390px; 
+    height: 24px; 
+    width: 35px; 
+    font-weight: normal; 
+    color: rgb(229, 248, 176); 
+    line-height: 24px;
+}
 
 /*Изменение месяцев и изображений*/
 [name=months] {
@@ -74,7 +256,7 @@
    display: block;
   } 
 
-  /*.prevMonth {
+  .nextMonth {
     position: absolute; 
     width: 20px; 
     height: 6px; 
@@ -83,18 +265,15 @@
     cursor: pointer;
   }
 
-  .nextMonth {
+  .prevMonth {
     position: absolute; 
     width: 20px; 
     height: 6px; 
     bottom: -6px; 
     left: 2px; 
     cursor: pointer;
-  }*/
-
-  .img {
-    opacity: 0.5;
   }
+  
 
 [name=months]:nth-of-type(1):checked ~ .variant1>.ipad,
 [name=months]:nth-of-type(1):checked ~ .variant1>.car,
@@ -175,3 +354,55 @@
 {
     opacity: 1;
 }
+
+/*Изменение валют*/
+[name=currency] {
+    position: absolute;
+    visibility: hidden;
+} 
+
+.money {
+    display: none;
+  }
+
+  [name=currency]:nth-of-type(1):checked ~ .currency-one,
+  [name=currency]:nth-of-type(2):checked ~ .currency-two {
+   display: block;
+  } 
+
+  .prevCurrency {
+    position: absolute; 
+    width: 20px; 
+    height: 6px; 
+    top: -6px; 
+    left: 8px; 
+    cursor: pointer;
+  }
+
+  .nextCurrency {
+    position: absolute; 
+    width: 20px; 
+    height: 6px; 
+    bottom: -6px; 
+    left: 8px; 
+    cursor: pointer;
+  }
+
+.money2 {
+    display: none;
+}
+  
+[name=currency]:nth-of-type(1):checked ~ .money2>[for=rub],
+[name=currency]:nth-of-type(2):checked ~ .money2>[for=usd] {
+    display: block;
+} 
+
+.money3 {
+    display: none;
+}
+
+[name=currency]:nth-of-type(1):checked ~ .money3>[for=rub],
+[name=currency]:nth-of-type(2):checked ~ .money3>[for=usd] {
+    display: block;
+} 
+
