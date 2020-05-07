@@ -1,21 +1,7 @@
-
- /*#slider {
-     width: 200px;
-     height: 200px;
-     overflow: hidden;
- }*/
- 
 [name=sliders] {
     position: absolute;
     visibility: hidden;
-}
-  /*.slide-one,
-  .slide-two,
-  .slide-three,
-  .slide-four,
-  .slide-five {
-    display: none;
-  } */
+} 
 
 .slide {
     display: none;
