@@ -274,44 +274,29 @@
     cursor: pointer;
   }  
 
-[name=months]:nth-of-type(1):checked ~ .ipad,
-[name=months]:nth-of-type(1):checked ~ .car,
-[name=months]:nth-of-type(1):checked ~ .house,
-[name=months]:nth-of-type(1):checked ~ .plane,
-[name=months]:nth-of-type(2):checked ~ .ipad,
-[name=months]:nth-of-type(2):checked ~ .car,
-[name=months]:nth-of-type(2):checked ~ .house,
-[name=months]:nth-of-type(2):checked ~ .plane
+[name=months]:nth-of-type(1):checked ~ .semi-transparent,
+[name=months]:nth-of-type(2):checked ~ .semi-transparent
 {
     opacity: 0.5;
 }
 
-[name=months]:nth-of-type(3):checked ~ .car,
-[name=months]:nth-of-type(3):checked ~ .house,
-[name=months]:nth-of-type(3):checked ~ .plane,
-[name=months]:nth-of-type(4):checked ~ .car,
-[name=months]:nth-of-type(4):checked ~ .house,
-[name=months]:nth-of-type(4):checked ~ .plane,
-[name=months]:nth-of-type(5):checked ~ .car,
-[name=months]:nth-of-type(5):checked ~ .house,
-[name=months]:nth-of-type(5):checked ~ .plane
+[name=months]:nth-of-type(3):checked ~ .semi-transparent,
+[name=months]:nth-of-type(4):checked ~ .semi-transparent,
+[name=months]:nth-of-type(5):checked ~ .semi-transparent
 {
     opacity: 0.5;
 }
 
-[name=months]:nth-of-type(6):checked ~ .house,
-[name=months]:nth-of-type(6):checked ~ .plane,
-[name=months]:nth-of-type(7):checked ~ .house,
-[name=months]:nth-of-type(7):checked ~ .plane,
-[name=months]:nth-of-type(8):checked ~ .house,
-[name=months]:nth-of-type(8):checked ~ .plane 
+[name=months]:nth-of-type(6):checked ~ .semi-transparent,
+[name=months]:nth-of-type(7):checked ~ .semi-transparent,
+[name=months]:nth-of-type(8):checked ~ .semi-transparent
 {
     opacity: 0.5;
 }
 
-[name=months]:nth-of-type(9):checked ~ .plane,
-[name=months]:nth-of-type(10):checked ~ .plane,
-[name=months]:nth-of-type(11):checked ~ .plane
+[name=months]:nth-of-type(9):checked ~ .semi-transparent,
+[name=months]:nth-of-type(10):checked ~ .semi-transparent,
+[name=months]:nth-of-type(11):checked ~ .semi-transparent
 {
     opacity: 0.5;
 }
