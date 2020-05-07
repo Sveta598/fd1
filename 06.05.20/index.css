@@ -272,87 +272,48 @@
     bottom: -6px; 
     left: 2px; 
     cursor: pointer;
-  }
-  
+  }  
 
-[name=months]:nth-of-type(1):checked ~ .variant1>.ipad,
-[name=months]:nth-of-type(1):checked ~ .variant1>.car,
-[name=months]:nth-of-type(1):checked ~ .variant1>.house,
-[name=months]:nth-of-type(1):checked ~ .variant1>.plane,
-[name=months]:nth-of-type(2):checked ~ .variant1>.ipad,
-[name=months]:nth-of-type(2):checked ~ .variant1>.car,
-[name=months]:nth-of-type(2):checked ~ .variant1>.house,
-[name=months]:nth-of-type(2):checked ~ .variant1>.plane,
-{
-    opacity: 0.5;
-} 
-
-[name=months]:nth-of-type(3):checked ~ .variant2>.ipad,
-[name=months]:nth-of-type(4):checked ~ .variant2>.ipad,
-[name=months]:nth-of-type(5):checked ~ .variant2>.ipad
-{
-    opacity: 1;
-} 
-
-[name=months]:nth-of-type(3):checked ~ .variant2>.car,
-[name=months]:nth-of-type(3):checked ~ .variant2>.house,
-[name=months]:nth-of-type(3):checked ~ .variant2>.plane,
-[name=months]:nth-of-type(4):checked ~ .variant2>.car,
-[name=months]:nth-of-type(4):checked ~ .variant2>.house,
-[name=months]:nth-of-type(4):checked ~ .variant2>.plane,
-[name=months]:nth-of-type(5):checked ~ .variant2>.car,
-[name=months]:nth-of-type(5):checked ~ .variant2>.house,
-[name=months]:nth-of-type(5):checked ~ .variant2>.plane
+[name=months]:nth-of-type(1):checked ~ .ipad,
+[name=months]:nth-of-type(1):checked ~ .car,
+[name=months]:nth-of-type(1):checked ~ .house,
+[name=months]:nth-of-type(1):checked ~ .plane,
+[name=months]:nth-of-type(2):checked ~ .ipad,
+[name=months]:nth-of-type(2):checked ~ .car,
+[name=months]:nth-of-type(2):checked ~ .house,
+[name=months]:nth-of-type(2):checked ~ .plane
 {
     opacity: 0.5;
 }
 
-[name=months]:nth-of-type(6):checked ~ .variant3>.ipad,
-[name=months]:nth-of-type(6):checked ~ .variant3>.car,
-[name=months]:nth-of-type(7):checked ~ .variant3>.ipad,
-[name=months]:nth-of-type(7):checked ~ .variant3>.car,
-[name=months]:nth-of-type(8):checked ~ .variant3>.ipad,
-[name=months]:nth-of-type(8):checked ~ .variant3>.car 
-{
-    opacity: 1;
-}
-
-[name=months]:nth-of-type(6):checked ~ .variant3>.house,
-[name=months]:nth-of-type(6):checked ~ .variant3>.plane,
-[name=months]:nth-of-type(7):checked ~ .variant3>.house,
-[name=months]:nth-of-type(7):checked ~ .variant3>.plane,
-[name=months]:nth-of-type(8):checked ~ .variant3>.house,
-[name=months]:nth-of-type(8):checked ~ .variant3>.plane 
+[name=months]:nth-of-type(3):checked ~ .car,
+[name=months]:nth-of-type(3):checked ~ .house,
+[name=months]:nth-of-type(3):checked ~ .plane,
+[name=months]:nth-of-type(4):checked ~ .car,
+[name=months]:nth-of-type(4):checked ~ .house,
+[name=months]:nth-of-type(4):checked ~ .plane,
+[name=months]:nth-of-type(5):checked ~ .car,
+[name=months]:nth-of-type(5):checked ~ .house,
+[name=months]:nth-of-type(5):checked ~ .plane
 {
     opacity: 0.5;
 }
 
-[name=months]:nth-of-type(9):checked ~ .variant4>.ipad,
-[name=months]:nth-of-type(9):checked ~ .variant4>.car,
-[name=months]:nth-of-type(9):checked ~ .variant4>.house,
-[name=months]:nth-of-type(10):checked ~ .variant4>.ipad,
-[name=months]:nth-of-type(10):checked ~ .variant4>.car,
-[name=months]:nth-of-type(10):checked ~ .variant4>.house,
-[name=months]:nth-of-type(11):checked ~ .variant4>.ipad,
-[name=months]:nth-of-type(11):checked ~ .variant4>.car,
-[name=months]:nth-of-type(11):checked ~ .variant4>.house
-{
-    opacity: 1;
-}
-
-[name=months]:nth-of-type(9):checked ~ .variant4>.plane,
-[name=months]:nth-of-type(10):checked ~ .variant4>.plane,
-[name=months]:nth-of-type(11):checked ~ .variant4>.plane
+[name=months]:nth-of-type(6):checked ~ .house,
+[name=months]:nth-of-type(6):checked ~ .plane,
+[name=months]:nth-of-type(7):checked ~ .house,
+[name=months]:nth-of-type(7):checked ~ .plane,
+[name=months]:nth-of-type(8):checked ~ .house,
+[name=months]:nth-of-type(8):checked ~ .plane 
 {
     opacity: 0.5;
 }
 
-[name=months]:nth-of-type(12):checked ~ .variant5>.ipad,
-[name=months]:nth-of-type(12):checked ~ .variant5>.car,
-[name=months]:nth-of-type(12):checked ~ .variant5>.house,
-[name=months]:nth-of-type(12):checked ~ .variant5>.plane
+[name=months]:nth-of-type(9):checked ~ .plane,
+[name=months]:nth-of-type(10):checked ~ .plane,
+[name=months]:nth-of-type(11):checked ~ .plane
 {
-    opacity: 1;
+    opacity: 0.5;
 }
 
 /*Изменение валют*/
@@ -390,10 +351,10 @@
 
 .money2 {
     display: none;
-}
-  
-[name=currency]:nth-of-type(1):checked ~ .money2>[for=rub],
-[name=currency]:nth-of-type(2):checked ~ .money2>[for=usd] {
+}  
+
+[name=currency]:nth-of-type(1):checked ~ .money-inp1,
+[name=currency]:nth-of-type(2):checked ~ .money-inp2 {
     display: block;
 } 
 
@@ -401,8 +362,7 @@
     display: none;
 }
 
-[name=currency]:nth-of-type(1):checked ~ .money3>[for=rub],
-[name=currency]:nth-of-type(2):checked ~ .money3>[for=usd] {
+[name=currency]:nth-of-type(1):checked ~ .money-count1,
+[name=currency]:nth-of-type(2):checked ~ .money-count2 {
     display: block;
-} 
-
+}
