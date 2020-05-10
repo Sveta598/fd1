@@ -1,0 +1,114 @@
+.currentVault>span {
+    display: none;
+  }
+  
+  #vault:checked ~ .wrapper>.currentVault>span:nth-of-type(2) {
+    display: inline;
+  }
+  #vault:not(:checked) ~ .wrapper>.currentVault>span:nth-of-type(1) {
+    display: inline;
+  }
+  
+  .currentVault {
+    position: relative;
+  }
+  [for="vault"] {
+    position: absolute;
+    font-family: arial;
+    left: 16px;
+  }
+  [for="vault"]:nth-of-type(1) {
+    top: -7px;
+  }
+  [for="vault"]:nth-of-type(2) {
+    bottom: -8px;
+  }
+  
+  .vaultLabel::before {
+    content: "RUB";
+  }
+  
+  #vault:checked ~ .wrapper .vaultLabel::before {
+    content: "USD";
+  }
+  
+  .monthSwitch {
+    display: inline-block;
+    width: 16px;
+    outline: 1px solid red;
+    height: 1em;
+    position: relative;
+  }
+  
+  .monthSwitch > div {
+    position: absolute;
+    display: none;
+  }
+  
+  #_12:checked ~ .wrapper ._12,
+  #_11:checked ~ .wrapper ._11,
+  #_10:checked ~ .wrapper ._10,
+  #_9:checked ~ .wrapper ._9,
+  #_8:checked ~ .wrapper ._8,
+  #_7:checked ~ .wrapper ._7,
+  #_6:checked ~ .wrapper ._6,
+  #_5:checked ~ .wrapper ._5,
+  #_4:checked ~ .wrapper ._4,
+  #_3:checked ~ .wrapper ._3,
+  #_2:checked ~ .wrapper ._2,
+  #_1:checked ~ .wrapper ._1 {
+    display: block;
+  }
+  
+  .monthSwitch > div > label {
+    position: absolute;
+    left: 7px;
+  }
+  
+  .monthSwitch > div > label:nth-of-type(1) {
+     top: -10px;
+  }
+  .monthSwitch > div > label:nth-of-type(2) {
+     bottom: -10px;
+  }
+  
+  .semiOpacity1 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+  }
+  .semiOpacity2 {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+  }
+  .semiOpacity3 {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+  }
+  .semiOpacity4 {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+  }
+  
+  [name="month"]:nth-of-type(n+3):checked ~ .wrapper .semiOpacity4 {
+    opacity: 1;
+  }
+  
+  [name="month"]:nth-of-type(n+5):checked ~ .wrapper .semiOpacity3 {
+    opacity: 1;
+  }
+  
+  [name="month"]:nth-of-type(n+9):checked ~ .wrapper .semiOpacity2 {
+    opacity: 1;
+  }
+  
+  [name="month"]:nth-of-type(12):checked ~ .wrapper .semiOpacity1 {
+    opacity: 1;
+  }

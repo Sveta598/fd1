@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style="background: black">
+<div data-element="calculator">
+    <!--Изменение изображений и месяцев -->
+    <input id="one" type="radio" name="months" checked>
+    <input id="two" type="radio" name="months">
+    <input id="three" type="radio" name="months">
+    <input id="four" type="radio" name="months">
+    <input id="five" type="radio" name="months">
+    <input id="six" type="radio" name="months">
+    <input id="seven" type="radio" name="months">
+    <input id="eight" type="radio" name="months">
+    <input id="nine" type="radio" name="months">
+    <input id="ten" type="radio" name="months">
+    <input id="eleven" type="radio" name="months">
+    <input id="twelve" type="radio" name="months">   
+
+    <!--Месяцы-->
+    <div class="month month-one">
+    <span>1</span>
+    <label for="two" class="nextMonth"></label>
+    <label for="one" class="prevMonth"></label>
+    </div>
+    <div class="month month-two">
+    <span>2</span>
+    <label for="three" class="nextMonth"></label>
+    <label for="one" class="prevMonth"></label>
+    </div>
+    <div class="month month-three">
+    <span>3</span>
+    <label for="four" class="nextMonth"></label>
+    <label for="two" class="prevMonth"></label>
+    </div>
+    <div class="month month-four">
+    <span>4</span>
+    <label for="five" class="nextMonth"></label>
+    <label for="three" class="prevMonth"></label>
+    </div>
+    <div class="month month-five">
+    <span>5</span>
+    <label for="six" class="nextMonth"></label>
+    <label for="four" class="prevMonth"></label>
+    </div>
+    <div class="month month-six">
+    <span>6</span>
+    <label for="seven" class="nextMonth"></label>
+    <label for="five" class="prevMonth"></label>
+    </div>
+    <div class="month month-seven">
+    <span>7</span>
+    <label for="eight" class="nextMonth"></label>
+    <label for="six" class="prevMonth"></label>
+    </div>
+    <div class="month month-eight">
+    <span>8</span>
+    <label for="nine" class="nextMonth"></label>
+    <label for="seven" class="prevMonth"></label>
+    </div>
+    <div class="month month-nine">
+    <span>9</span>
+    <label for="ten" class="nextMonth"></label>
+    <label for="eight" class="prevMonth"></label>
+    </div>
+    <div class="month month-ten">
+    <span>10</span>
+    <label for="eleven" class="nextMonth"></label>
+    <label for="nine" class="prevMonth"></label>
+    </div>
+    <div class="month month-eleven">
+    <span>11</span>
+    <label for="twelve" class="nextMonth"></label>
+    <label for="ten" class="prevMonth"></label>
+    </div>
+    <div class="month month-twelve">
+    <span>12</span>
+    <label for="twelve" class="nextMonth"></label>
+    <label for="eleven" class="prevMonth"></label>
+    </div>    
+
+    <!--Изображения-->
+    <div class="calc"></div>
+    <div class="ipad"></div>
+    <div class="car"></div>
+    <div class="house"></div>
+    <div class="plane"></div>
+    <!--Конец изменения изображений и месяцев -->
+
+   <input class="summ" maxlength="7"> 
+
+    <!--Изменение валюты -->
+    <div class="usd-rub">
+    <input id="rub" type="radio" name="currency" checked>
+    <input id="usd" type="radio" name="currency">
+
+    <div class="money3 money-count1">
+        0
+        <span class="six-em"> руб.</span> 
+        00<span class="eight-em">.00</span>
+        <span class="six-em"> коп.</span>
+        <label for="rub"></label>
+    </div>
+    <div class="money3 money-count2">        
+        <span class="nine-em"> $</span> 
+        0<span class="eight-em">.00</span>        
+        <label for="usd"></label>
+    </div> 
+
+    <div class="money currency-one">
+    <span>RUB</span>
+    <label for="usd" class="prevCurrency"></label>
+    <label for="usd" class="nextCurrency"></label>    
+    </div>
+    <div class="money currency-two">
+    <span>USD</span>
+    <label for="rub" class="prevCurrency"></label>
+    <label for="rub" class="nextCurrency"></label>    
+    </div>
+    
+    <div class="money2 money-inp1">
+    <div class="cur">RUB</div>
+    <label for="rub"></label>
+    </div>
+    <div class="money2 money-inp2">
+    <div class="cur">USD</div>
+    <label for="usd"></label>
+    </div> 
+    <!--Конец изменения валюты 3-->
+
+    <div class="first-line">0,000.00</div>
+    <div class="second-line">000.00</div>
+    <div class="second-row">в месяц</div>
+    <div class="third-line">00.00</div>
+    <div class="third-row">в день</div>
+    <div class="fourth-line">0.00</div>
+    <div class="fourth-row">в час</div>
+    <div class="fifth-line">0.00</div>
+    <div class="fifth-row">в минуту</div>
+    <div class="sixth-line">0.00</div>
+    <div class="sixth-row">в секунду</div>
+    <div class="percents">10%</div>    
+    
+</div>
+
+</body>
+</html>
