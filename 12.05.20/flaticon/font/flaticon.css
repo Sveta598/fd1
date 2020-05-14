@@ -28,7 +28,7 @@
         font-size: 35px;
 font-style: normal;
 margin-left: 10px;
-
+color: rgb(214,237,9);
 }
 
 .flaticon-like:before { content: "\f100"; }
