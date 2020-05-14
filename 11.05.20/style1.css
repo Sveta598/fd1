@@ -1,0 +1,45 @@
+body {
+    margin: 200px;
+    position: relative;
+  }
+  div {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    position: relative;
+  
+  }
+  
+  #one {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    position: absolute;
+    top: 0;
+    background: red;
+    transform: rotate(-15deg) skew(15deg, 15deg);
+    left: 56px;
+  }
+  #two {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    position: absolute;
+    top: 0;
+    background: red;
+    transform: rotate(15deg) skew(-15deg, -15deg);
+    left: 4px;
+  }
+  
+  #three {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    position: absolute;
+    background: red;
+    transform: rotate(45deg) skew(15deg, 15deg);
+    top: -45px;
+    left: 30px;
+    
+    
+  }

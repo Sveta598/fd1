@@ -1,0 +1,26 @@
+  body {
+    margin: 0;
+  }
+
+  @keyframes jumping {
+    0%  { right: 50%; top: 5%; }
+    20% { right: 40%; top: 40%; }
+    40% { right: 30%; top: 5%; }
+    60% { right: 20%; top: 40%; }
+    80% { right: 10%; top: 5%; }
+    100% { right: 0; top: 40%; }
+  }
+  
+.ball {
+    position: absolute;
+    top: 5%;
+    right: 50%;
+    width: 120px;
+    height: 120px;
+    background: rgb(10,31,99);
+    border-radius: 50%;
+    box-shadow: 15px -2px rgb(28,163,204); 
+    animation: jumping 10s linear 2 alternate;
+       
+}
+

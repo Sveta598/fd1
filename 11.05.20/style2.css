@@ -1,0 +1,27 @@
+body {
+    margin: 50px;
+    position: relative;
+  }
+    
+  .one {
+    width: 305px;
+    height: 305px;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .two {
+    width: 228px;
+    height: 225px;
+    position: absolute;
+    top: 175px;
+    left: 13%;
+    border-radius: 20px;
+    background: blue;
+    transform: rotate(45deg);
+    }
+  
+ 
