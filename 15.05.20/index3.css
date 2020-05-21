@@ -1,0 +1,27 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    flex-wrap: wrap;
+  }
+  .fl-el {
+    outline: 1px solid red;
+    flex-basis: calc(33% - 40px);
+    margin: 20px;
+  }
+  #one, #two {
+    flex-basis: 300px;
+  }
+  
+  #three{
+      flex-basis: 120px;
+      margin-bottom: 10px;
+  }
+  
+  #four {
+    flex-basis: 120px;
+    margin-top: 10px;
+  }
+  body {
+    margin: 0;
+  }
