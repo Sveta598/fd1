@@ -1,0 +1,341 @@
+body {
+    margin: 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 85px 10px 1fr 10px 144px;
+    justify-content: center;
+    grid-template-areas: 
+    "pageHeader"
+    "pageBody__block2"
+    "mainBlock"
+    "pageBody__block4"
+    "pageFooter";
+} 
+/*header*/
+.pageHeader {
+    border-bottom: 1px solid silver;
+    grid-area: pageHeader;
+    display: grid;
+    grid-template-columns: 12.07% 27.95% 1fr;
+    grid-template-rows: 75px;
+    grid-column-gap: 10px;
+    grid-template-areas: 
+    "pageHeader__elem1 pageHeader__elem2 pageHeader__elem3";
+}
+.pageHeader__elem1 {
+    grid-area: pageHeader__elem1;
+    background: #888;
+}
+.pageHeader__elem2 {
+    grid-area: pageHeader__elem2;
+    background: #888;
+}
+.pageHeader__elem3 {
+    grid-area: pageHeader__elem3;
+    background: #888;
+}
+
+.pageBody__block2 {
+    grid-area: pageBody__block2;
+}
+/*main*/
+.mainBlock {
+    grid-area: mainBlock;
+    display: grid;
+    grid-template-columns: 145px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-template-areas: 
+    "sideBar pageContent";
+}
+/*aside*/
+.sideBar {
+    grid-area: sideBar;
+    display: grid;
+    grid-template-columns: 145px;
+    grid-template-rows: 1fr 140px;
+    grid-row-gap: 50px;
+    grid-template-areas: 
+    "sideBar__elem1"
+    "sideBar__elem2";
+}
+.sideBar__elem1 {
+    grid-area: sideBar__elem1;
+    background: #888;
+    margin-top: 0;
+    padding-left: 0;
+}
+.sideBar__elem2 {
+    grid-area: sideBar__elem2;
+    background: #888;
+}
+/*section*/
+.pageContent {
+    grid-area: pageContent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 165px 1fr 170px;
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+    grid-template-areas: 
+    "pageContent__elem1 pageContent__elem1"
+    "pageContent__elem2 pageContent__elem2"
+    "pageContent__elem3 pageContent__elem4";
+}
+.pageContent__elem1 {
+    grid-area: pageContent__elem1;
+    background: #ddd;
+}
+.pageContent__elem2 {
+    padding-left: 0;
+    grid-area: pageContent__elem2;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 120px 120px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-areas: 
+    "pageContent__item1 pageContent__item2 pageContent__item3 pageContent__item4 . "
+    "pageContent__item5 pageContent__item6 pageContent__item7 . .";
+}
+.pageContent__item1 {
+    grid-area: pageContent__item1;
+    background: #ddd;
+}
+.pageContent__item2 {
+    grid-area: pageContent__item2;
+    background: #ddd;
+}
+.pageContent__item3 {
+    grid-area: pageContent__item3;
+    background: #ddd;
+}
+.pageContent__item4 {
+    grid-area: pageContent__item4;
+    background: #ddd;
+}
+.pageContent__item5 {
+    grid-area: pageContent__item5;
+    background: #ddd;
+}
+.pageContent__item6 {
+    grid-area: pageContent__item6;
+    background: #ddd;
+}
+.pageContent__item7 {
+    grid-area: pageContent__item7;
+    background: #ddd;
+}
+.pageContent__elem3 {
+    grid-area: pageContent__elem3;
+    background: #ddd;
+}
+.pageContent__elem4 {
+    grid-area: pageContent__elem4;
+    background: #ddd;
+}
+.pageBody__block4 {
+    grid-area: pageBody__block4;
+}
+/*footer*/
+.pageFooter {
+    border-top: 1px solid silver;
+    grid-area: pageFooter;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+    "pageFooter__elem1 pageFooter__elem2 pageFooter__elem3"
+    "pageFooter__elem1 pageFooter__elem2 pageFooter__elem4";
+}
+.pageFooter__elem1 {
+    grid-area: pageFooter__elem1;
+    background: #888;
+    margin-top: 10px;
+}
+.pageFooter__elem2 {
+    grid-area: pageFooter__elem2;
+    background: #888;
+    margin-top: 10px;
+}
+.pageFooter__elem3 {
+    grid-area: pageFooter__elem3;
+    background: #888;
+    margin-top: 10px;
+}
+.pageFooter__elem4 {
+    grid-area: pageFooter__elem4;
+    background: #888;
+    margin-top: 10px;
+}
+@media screen and (max-width: 640px) {
+    .pageHeader__elem2,
+    .sideBar__elem2, 
+    .pageFooter__elem1,
+    .pageFooter__elem2  {
+        display: none;
+    }
+    .pageContent__elem1 {
+        background: #888;
+    }
+    .sideBar__elem1 {
+        background: #ddd;
+    }
+    .pageFooter__elem3,
+    .pageFooter__elem4 {
+        background: #ddd;
+    }
+    .pageContent__item1,
+    .pageContent__item2,
+    .pageContent__item3,
+    .pageContent__item4,
+    .pageContent__item5,
+    .pageContent__item6,
+    .pageContent__item7 {
+        border-radius: 50%;
+        border: 1px solid black;
+    } 
+    body{
+        margin: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 75px 1fr 50px;
+        grid-row-gap: 5px;
+        grid-template-areas: 
+        "pageHeader"
+        "mainBlock"
+        "pageFooter";
+    }
+    .pageHeader {
+        border-bottom: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 5px;
+        grid-template-areas: 
+        "pageHeader__elem1"
+        "pageHeader__elem3";
+    }
+    .mainBlock {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 300px;
+        grid-row-gap: 5px;
+        grid-template-areas: 
+        "pageContent"
+        "sideBar";
+    } 
+    .sideBar {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "sideBar__elem1";
+    }
+    .pageContent {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr 85px 85px;
+        grid-row-gap: 5px;
+        grid-template-areas: 
+        "pageContent__elem1"
+        "pageContent__elem2"
+        "pageContent__elem3"
+        "pageContent__elem4";
+    } 
+    .pageContent__elem2 {
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        justify-content: center;
+        grid-template-areas: 
+        "pageContent__item1 pageContent__item2"
+        "pageContent__item3 pageContent__item4"
+        "pageContent__item5 pageContent__item6"
+        "pageContent__item7 . ";
+    } 
+    .pageFooter {
+        border-top: none;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 10px;
+        grid-template-areas: 
+        "pageFooter__elem3 pageFooter__elem4";
+    }   
+    .pageFooter__elem3,
+    .pageFooter__elem4 {
+        margin-top: -12px;
+    }
+    }
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .pageHeader__elem2,
+    .pageContent__elem1,
+    .pageFooter__elem3,
+    .pageFooter__elem4
+    {
+        display: none;
+    }
+    .sideBar__elem2 {
+        background: #ddd;
+    }
+    .pageContent__elem3,
+    .pageContent__elem4 {
+        background: #888;
+    }
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 85px 1fr 166px;
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+        grid-template-areas: 
+        "pageHeader"
+        "mainBlock"
+        "pageFooter";
+    } 
+    .pageHeader {
+        grid-template-columns: 30% 1fr;
+        grid-template-rows: 85px;
+        grid-column-gap: 5px;
+        grid-template-areas: 
+        "pageHeader__elem1 pageHeader__elem3";
+    }
+    .mainBlock {
+        display: subgrid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 80px 80px 80px;
+        grid-row-gap: 5px;
+        grid-template-areas: 
+        "sideBar__elem1"
+        "pageContent__elem2"
+        "sideBar__elem2"
+        "pageContent__elem3"
+        "pageContent__elem4";
+    }  
+    /*здесь дочерние элементы блока main разрываются на части??? 
+    Грид не работает в отношении внучатых элементов. Subgrid тоже
+    не помогает*/
+    .pageContent__elem2 {
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 30% 30% 30%;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        grid-template-areas: 
+        "pageContent__item1 pageContent__item2 pageContent__item3"
+        "pageContent__item4 pageContent__item5 pageContent__item6"
+        "pageContent__item7 . . ";
+    }
+    .pageFooter {
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 80px;
+        grid-row-gap: 5px;
+        grid-template-areas: 
+        "pageFooter__elem1" 
+        "pageFooter__elem2";
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        max-width: 789px;
+        margin: 10px auto;
+    }
+}

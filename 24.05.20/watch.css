@@ -1,0 +1,114 @@
+.watch {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    border: 1px solid blue;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.watch>div {
+    text-align: center;
+    font-size: 0.8em;
+}
+.watch__elem {
+    color: blue;
+}
+.watch__number15 {
+    position: absolute;
+    top: 47%;
+    right: 2%;
+    transform: rotate(90deg);
+}
+.watch__number30 {
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    transform: rotate(180deg);
+}
+.watch__number45 {
+    position: absolute;
+    top: 47%;
+    left: 2%;
+    transform: rotate(270deg);
+}
+.watch__number60 {
+    position: absolute;
+    top: 0;
+    left: 48%;
+}
+.rectangle1 {
+    position: absolute;
+    top: 8%;
+    left: 20%;
+    bottom: 8%;
+    right: 20%;
+}
+.watch__number5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(40deg);
+}
+.watch__number25 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(130deg);
+}
+.watch__number35 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(220deg);
+}
+.watch__number55 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(310deg);
+}
+.rectangle2 {
+    position: absolute;
+    top: 28%;
+    left: 5%;
+    bottom: 28%;
+    right: 5%;
+}
+.watch__number10 {
+    position: absolute;
+    top: -5%;
+    right: 2%;
+    transform: rotate(60deg);
+}
+.watch__number20 {
+    position: absolute;
+    bottom: -5%;
+    right: 2%;
+    transform: rotate(110deg);
+}
+.watch__number40 {
+    position: absolute;
+    bottom: -5%;
+    left: 2%;
+    transform: rotate(240deg);
+}
+.watch__number50 {
+    position: absolute;
+    top: -5%;
+    left: 2%;
+    transform: rotate(300deg);
+}
+.watch__arrow {
+    height: 130px;
+    width: 2px;
+    background: red;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    animation: rotating 60s linear infinite;
+}
+@keyframes rotating {
+    0%  { top: 20px; left: 50%; bottom: 50%; right: 50%;}
+     100%   {transform: rotate(360deg); }
+  }

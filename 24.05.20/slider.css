@@ -1,0 +1,89 @@
+[name=dartSlider] {
+    position: absolute;
+    visibility: hidden;
+} 
+
+.slide {
+    display: none;
+  }
+
+  [type=radio]:nth-of-type(1):checked ~ div>.slide__slide1,
+  [type=radio]:nth-of-type(2):checked ~ div>.slide__slide2,
+  [type=radio]:nth-of-type(3):checked ~ div>.slide__slide3,
+  [type=radio]:nth-of-type(4):checked ~ div>.slide__slide4,
+  [type=radio]:nth-of-type(5):checked ~ div>.slide__slide5 {
+   display: block;
+  } 
+
+.slide__prevSlide {
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right: 10px solid red;
+    position: absolute;
+    top: 98px;
+    left: 0;
+} 
+.slide__nextSlide {
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-left: 10px solid red;
+    position: absolute;
+    top: 98px;
+    left: 198px;
+} 
+
+.slideSwitch>[for=one] {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    top: 188px;
+    left: 66px;
+}
+.slideSwitch>[for=two] {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    top: 188px;
+    left: 86px;
+}
+.slideSwitch>[for=three] {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    top: 188px;
+    left: 106px;
+}
+.slideSwitch>[for=four] {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    top: 188px;
+    left: 126px;
+}
+.slideSwitch>[for=five] {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    top: 188px;
+    left: 146px;
+}
+
+[type=radio]:nth-of-type(1):checked ~ div>.slideSwitch>[for=one],
+[type=radio]:nth-of-type(2):checked ~ div>.slideSwitch>[for=two], 
+[type=radio]:nth-of-type(3):checked ~ div>.slideSwitch>[for=three], 
+[type=radio]:nth-of-type(4):checked ~ div>.slideSwitch>[for=four], 
+[type=radio]:nth-of-type(5):checked ~ div>.slideSwitch>[for=five] {
+    background-color: blue;
+} 
