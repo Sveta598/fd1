@@ -1,0 +1,508 @@
+body {
+  margin: 0;
+  max-width: 100vmin;
+}
+
+.chessboard {
+  margin-left: 10vmin;
+}
+
+.chessboard__row {
+  font-size: 0;
+}
+
+.chessboard__row_number-1::before {
+  content: "1";
+  float: left;
+  margin-left: -5vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__row_number-2::before {
+  content: "2";
+  float: left;
+  margin-left: -5vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__row_number-3::before {
+  content: "3";
+  float: left;
+  margin-left: -5vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__row_number-4::before {
+  content: "4";
+  float: left;
+  margin-left: -5vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__row_number-5::before {
+  content: "5";
+  float: left;
+  margin-left: -5vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__row_number-6::before {
+  content: "6";
+  float: left;
+  margin-left: -5vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__row_number-7::before {
+  content: "7";
+  float: left;
+  margin-left: -5vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__row_number-8::before {
+  content: "8";
+  float: left;
+  margin-left: -5vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__row_number-1::after {
+  content: "1";
+  float: right;
+  margin-right: 4vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__row_number-2::after {
+  content: "2";
+  float: right;
+  margin-right: 4vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__row_number-3::after {
+  content: "3";
+  float: right;
+  margin-right: 4vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__row_number-4::after {
+  content: "4";
+  float: right;
+  margin-right: 4vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__row_number-5::after {
+  content: "5";
+  float: right;
+  margin-right: 4vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__row_number-6::after {
+  content: "6";
+  float: right;
+  margin-right: 4vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__row_number-7::after {
+  content: "7";
+  float: right;
+  margin-right: 4vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__row_number-8::after {
+  content: "8";
+  float: right;
+  margin-right: 4vmin;
+  margin-top: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.chessboard__cell {
+  height: 10vmin;
+  width: 10vmin;
+  display: inline-block;
+  outline: 1px solid red;
+  font-size: initial;
+}
+
+.chessboard__row_number-1 .chessboard__cell_number-1 {
+  background-color: red;
+}
+
+.chessboard__row_number-1 .chessboard__cell_number-3 {
+  background-color: red;
+}
+
+.chessboard__row_number-1 .chessboard__cell_number-5 {
+  background-color: red;
+}
+
+.chessboard__row_number-1 .chessboard__cell_number-7 {
+  background-color: red;
+}
+
+.chessboard__row_number-3 .chessboard__cell_number-1 {
+  background-color: red;
+}
+
+.chessboard__row_number-3 .chessboard__cell_number-3 {
+  background-color: red;
+}
+
+.chessboard__row_number-3 .chessboard__cell_number-5 {
+  background-color: red;
+}
+
+.chessboard__row_number-3 .chessboard__cell_number-7 {
+  background-color: red;
+}
+
+.chessboard__row_number-5 .chessboard__cell_number-1 {
+  background-color: red;
+}
+
+.chessboard__row_number-5 .chessboard__cell_number-3 {
+  background-color: red;
+}
+
+.chessboard__row_number-5 .chessboard__cell_number-5 {
+  background-color: red;
+}
+
+.chessboard__row_number-5 .chessboard__cell_number-7 {
+  background-color: red;
+}
+
+.chessboard__row_number-7 .chessboard__cell_number-1 {
+  background-color: red;
+}
+
+.chessboard__row_number-7 .chessboard__cell_number-3 {
+  background-color: red;
+}
+
+.chessboard__row_number-7 .chessboard__cell_number-5 {
+  background-color: red;
+}
+
+.chessboard__row_number-7 .chessboard__cell_number-7 {
+  background-color: red;
+}
+
+.chessboard__row_number-2 .chessboard__cell_number-2 {
+  background-color: red;
+}
+
+.chessboard__row_number-2 .chessboard__cell_number-4 {
+  background-color: red;
+}
+
+.chessboard__row_number-2 .chessboard__cell_number-6 {
+  background-color: red;
+}
+
+.chessboard__row_number-2 .chessboard__cell_number-8 {
+  background-color: red;
+}
+
+.chessboard__row_number-4 .chessboard__cell_number-2 {
+  background-color: red;
+}
+
+.chessboard__row_number-4 .chessboard__cell_number-4 {
+  background-color: red;
+}
+
+.chessboard__row_number-4 .chessboard__cell_number-6 {
+  background-color: red;
+}
+
+.chessboard__row_number-4 .chessboard__cell_number-8 {
+  background-color: red;
+}
+
+.chessboard__row_number-6 .chessboard__cell_number-2 {
+  background-color: red;
+}
+
+.chessboard__row_number-6 .chessboard__cell_number-4 {
+  background-color: red;
+}
+
+.chessboard__row_number-6 .chessboard__cell_number-6 {
+  background-color: red;
+}
+
+.chessboard__row_number-6 .chessboard__cell_number-8 {
+  background-color: red;
+}
+
+.chessboard__row_number-8 .chessboard__cell_number-2 {
+  background-color: red;
+}
+
+.chessboard__row_number-8 .chessboard__cell_number-4 {
+  background-color: red;
+}
+
+.chessboard__row_number-8 .chessboard__cell_number-6 {
+  background-color: red;
+}
+
+.chessboard__row_number-8 .chessboard__cell_number-8 {
+  background-color: red;
+}
+
+.chessboard__row_number-1 .chessboard__cell_number-1,
+.chessboard__row_number-1 .chessboard__cell_number-8 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -20vmin 0;
+}
+
+.chessboard__row_number-1 .chessboard__cell_number-2,
+.chessboard__row_number-1 .chessboard__cell_number-7 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -42vmin 0;
+}
+
+.chessboard__row_number-1 .chessboard__cell_number-3,
+.chessboard__row_number-1 .chessboard__cell_number-6 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -31vmin 0;
+}
+
+.chessboard__row_number-1 .chessboard__cell_number-4 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: 1vmin 0;
+}
+
+.chessboard__row_number-1 .chessboard__cell_number-5 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -10vmin 0;
+}
+
+.chessboard__row_number-2 .chessboard__cell_number-1 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin 0;
+}
+
+.chessboard__row_number-2 .chessboard__cell_number-2 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin 0;
+}
+
+.chessboard__row_number-2 .chessboard__cell_number-3 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin 0;
+}
+
+.chessboard__row_number-2 .chessboard__cell_number-4 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin 0;
+}
+
+.chessboard__row_number-2 .chessboard__cell_number-5 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin 0;
+}
+
+.chessboard__row_number-2 .chessboard__cell_number-6 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin 0;
+}
+
+.chessboard__row_number-2 .chessboard__cell_number-7 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin 0;
+}
+
+.chessboard__row_number-2 .chessboard__cell_number-8 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin 0;
+}
+
+.chessboard__row_number-7 .chessboard__cell_number-1 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin -11vmin;
+}
+
+.chessboard__row_number-7 .chessboard__cell_number-2 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin -11vmin;
+}
+
+.chessboard__row_number-7 .chessboard__cell_number-3 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin -11vmin;
+}
+
+.chessboard__row_number-7 .chessboard__cell_number-4 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin -11vmin;
+}
+
+.chessboard__row_number-7 .chessboard__cell_number-5 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin -11vmin;
+}
+
+.chessboard__row_number-7 .chessboard__cell_number-6 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin -11vmin;
+}
+
+.chessboard__row_number-7 .chessboard__cell_number-7 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin -11vmin;
+}
+
+.chessboard__row_number-7 .chessboard__cell_number-8 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -53vmin -11vmin;
+}
+
+.chessboard__row_number-8 .chessboard__cell_number-1,
+.chessboard__row_number-8 .chessboard__cell_number-8 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -20vmin -11vmin;
+}
+
+.chessboard__row_number-8 .chessboard__cell_number-2,
+.chessboard__row_number-8 .chessboard__cell_number-7 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -42vmin -11vmin;
+}
+
+.chessboard__row_number-8 .chessboard__cell_number-3,
+.chessboard__row_number-8 .chessboard__cell_number-6 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -31vmin -10.5vmin;
+}
+
+.chessboard__row_number-8 .chessboard__cell_number-4 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: 1vmin -10.5vmin;
+}
+
+.chessboard__row_number-8 .chessboard__cell_number-5 {
+  background-image: url("chess.png");
+  background-repeat: no-repeat;
+  background-size: 60vmin 20vmin;
+  background-position: -10vmin -10.5vmin;
+}
+
+.chessboard::before,
+.chessboard::after {
+  content: "abcdefgh";
+  font-family: Arial;
+  letter-spacing: 8vmin;
+  font-size: 4vmin;
+  text-align: center;
+  display: block;
+  margin-left: -4vmin;
+}
+/*# sourceMappingURL=main1.css.map */

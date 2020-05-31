@@ -1,0 +1,153 @@
+$chessboardRows: 8;
+$chessboardCells: 8;
+$bodyWidth: 100vmin;
+$chessboardCellOutline: 1px solid red;
+$chessboardCellColor: red;
+$negativeMargin: -0.5vmin;
+$negativeMargin1: -1vmin;
+$negativeMargin2: -2vmin;
+$negativeMargin3: -3vmin;
+$negativeMargin4: -4vmin;
+$negativeMargin5: -5vmin;
+$positiveMargin1: 1vmin;
+$positiveMargin2: 2vmin;
+$positiveMargin4: 4vmin;
+
+@mixin chessboard-content {
+    content: "abcdefgh";
+    font-family: Arial;
+    letter-spacing: $bodyWidth / 10 * 0.8;
+    font-size: $positiveMargin4;   
+    text-align: center; 
+    display: block;       
+    margin-left: $negativeMargin4;   
+}
+@mixin chessboardRow-leftcontent {
+    float: left; 
+    margin-left: $negativeMargin5;
+    margin-top: $positiveMargin2;
+    font-family: Arial;    
+    font-size: $positiveMargin4;
+    text-align: center;  
+}
+@mixin chessboardRow-rightcontent {
+    float: right;
+    margin-right: $positiveMargin4;
+    margin-top: $positiveMargin2;
+    font-family: Arial;    
+    font-size: $positiveMargin4;
+    text-align: center; 
+}
+@mixin image-path {
+    background-image: url('chess.png');
+    background-repeat: no-repeat;            
+    background-size: $bodyWidth / 10 * 6 $bodyWidth / 10 * 2;
+}
+body {
+    margin: 0;
+    max-width: $bodyWidth;
+}  
+.chessboard {
+    margin-left: $bodyWidth / 10;
+    &__row {
+        font-size: 0;
+        @for $a from 1 through $chessboardRows {
+            &_number-#{$a}::before {
+                content: "#{$a}";
+                @include chessboardRow-leftcontent;
+            }
+        }
+        @for $b from 1 through $chessboardRows {
+            &_number-#{$b}::after {
+                content: "#{$b}";
+                @include chessboardRow-rightcontent;
+            }
+        }
+    }
+    &__cell {
+        height: $bodyWidth / 10;
+        width: $bodyWidth / 10;
+        display: inline-block;     
+        outline: $chessboardCellOutline;
+        font-size: initial; 
+    }
+    @for $i from 1 through $chessboardRows / 2 {
+        @for $j from 1 through $chessboardCells / 2 {
+            &__row_number-#{$i * 2 - 1} &__cell_number-#{$j * 2 - 1}
+            {
+                background-color: $chessboardCellColor;
+            }
+        }
+    }
+    @for $i from 1 through $chessboardRows / 2 {
+        @for $j from 1 through $chessboardCells / 2 {
+            &__row_number-#{$i * 2} &__cell_number-#{$j * 2}
+            {
+                background-color: $chessboardCellColor;
+            }
+        }
+    }
+    &__row_number-1 &__cell_number-1,
+    &__row_number-1 &__cell_number-8 {
+        @include image-path;
+        background-position: -$bodyWidth / 10 * 2 0; 
+    }
+    &__row_number-1 &__cell_number-2,
+    &__row_number-1 &__cell_number-7 {
+        @include image-path;
+        background-position: -$bodyWidth / 10 * 4 + $negativeMargin2 0;   
+    }
+    &__row_number-1 &__cell_number-3,
+    &__row_number-1 &__cell_number-6 {
+        @include image-path;
+        background-position: -$bodyWidth / 10 * 3 + $negativeMargin1 0;   
+    }
+    &__row_number-1 &__cell_number-4 {
+        @include image-path;
+        background-position: $positiveMargin1 0;   
+    }
+    &__row_number-1 &__cell_number-5 {
+        @include image-path;
+        background-position: -$bodyWidth / 10 0;    
+    }
+    @for $c from 1 through $chessboardCells {
+        &__row_number-2 &__cell_number-#{$c} {
+            @include image-path;
+            background-position: -$bodyWidth / 10 * 5 + $negativeMargin3 0;   
+        }
+    }
+    @for $d from 1 through $chessboardCells {
+        &__row_number-7 &__cell_number-#{$d} {
+            @include image-path;
+            background-position: (-$bodyWidth / 10 * 5 + $negativeMargin3) (-$bodyWidth / 10 + $negativeMargin1);      
+        }
+    }
+    &__row_number-8 &__cell_number-1,
+    &__row_number-8 &__cell_number-8 {
+        @include image-path;
+        background-position: (-$bodyWidth / 10 * 2) (-$bodyWidth / 10 + $negativeMargin1); 
+    }
+    &__row_number-8 &__cell_number-2,
+    &__row_number-8 &__cell_number-7 {
+        @include image-path;
+        background-position: (-$bodyWidth / 10 * 4 + $negativeMargin2) (-$bodyWidth / 10 + $negativeMargin1); 
+    }
+    &__row_number-8 &__cell_number-3,
+    &__row_number-8 &__cell_number-6 {
+        @include image-path;
+        background-position: (-$bodyWidth / 10 * 3 + $negativeMargin1) (-$bodyWidth / 10 + $negativeMargin);  
+    }
+    &__row_number-8 &__cell_number-4 {
+        @include image-path;
+        background-position: $positiveMargin1 (-$bodyWidth / 10 + $negativeMargin);  
+    }
+    &__row_number-8 &__cell_number-5 {
+        @include image-path;
+        background-position: (-$bodyWidth / 10) (-$bodyWidth / 10 + $negativeMargin);  
+    }
+}
+.chessboard::before,
+.chessboard::after
+{
+    @include chessboard-content;
+}
