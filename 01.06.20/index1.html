@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*var rost=180;
+        var name="Anton";
+        var template= `Anton ${rost}`;
+        console.log(rost);
+        alert(name);*/
+        /*var rost;
+        var name;*/
+        /*var rost=180;
+        rost=190;
+        console.log(rost); //о очереди выведутся оба значения*/
+        /*let myName = "Anton";
+        myName = "Donald";
+        const age = 30;
+        age = 35; //mistake*/
+        /*var myNum = 2.5e2; //250//2.5 * 10^2*/
+        /*var result prompt("What's your name?"); //string
+        console.log(result);
+        console.log(typeof result);*/
+        /*var result = parseInt(prompt("Сколько тебе лет?"));
+        console.log(`Через год тебе будет ${result + 1}`)*/
+       /* var result = Number(prompt("Сколько тебе лет?"));
+        if (result > 35) {
+            console.log("May become the president");
+        } else {console.log("Too young")}*/
+        /*var result = Number(prompt('Сколько тебе лет?'));
+        if (result > 18 && result <= 65) {
+            alert("You can work");
+        } else {
+            alert("you can not work");
+        }*/
+        /*var resultString = result > 65 ? "Вы - пенсионер" : "Вы не пенсионер";*/
+        /*var rainbowColorNumber = Number(prompt('Введите номер цвета радуги'));
+        switch(rainbowColorNum) {
+            case 1:
+                console.log("Красный");
+            break;
+            case 2:
+                console.log("Оранжевый");
+            break;
+            case 3:
+                console.log("Желтый");
+            break;
+            case 4:
+                console.log("Зеленый");
+            break;
+            case 5:
+                console.log("Голубой");
+            break;
+            case 6:
+                console.log("Синий");
+            break;
+            case 7:
+                console.log("Фиолетовый");
+            break;
+            default:
+                console.log(`Цвета с индекосм ${rainbowColorNum} нет в радуге`);
+            break;
+        }
+
+        var rainbowColorNumber = prompt('Введите номер цвета радуги');
+        var message = `Цвета с индекосм ${rainbowColorNum} нет в радуге`;
+        switch(rainbowColorNum) {
+            case "1":
+                message = "Красный";
+            break;
+            case "2": etc.
+                message = "Оранжевый"; etc.
+            case 3:
+                console.log("Желтый");
+            break;
+            case 4:
+                console.log("Зеленый");
+            break;
+            case 5:
+                console.log("Голубой");
+            break;
+            case 6:
+                console.log("Синий");
+            break;
+            case 7:
+                console.log("Фиолетовый");
+            break;
+        }
+        console.log(message);*/
+
+        var age = Number(prompt('Введите номер цвета радуги'));
+        var message = "Вы несовершеннолетний";
+        switch(true) {
+            case  age >= 18 && age <= 65: 
+                message = "Вы совершеннолетний";
+            break;
+            case age > 65 && age <= 120: 
+                message = "Вы пенсионер";
+            break;
+            case age > 120: 
+                message = "Столько не живут";
+            break;
+        }
+        console.log(message);
+        
+    </script>
+</body>
+</html>
