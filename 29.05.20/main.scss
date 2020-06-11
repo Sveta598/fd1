@@ -40,7 +40,7 @@ $navItemTransformOriginY: 250px;
             &_number-#{$i} {
                 transform: rotate($i * -360deg / $navItems);
             }
-        }
+       }
     }
     @for $i from 1 through $navItems {
         #navBarRadio-#{$i}:checked~div>label[for=navBarRadio-#{$i}] {

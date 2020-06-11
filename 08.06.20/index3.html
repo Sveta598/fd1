@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /*var arr = [144,55,33,57,32,11,66,44,12,59];
+       function lessThan(num, testArray) {
+           var result = [];
+            for (var i = 0; i < testArray.length; i++) {
+                if(num >= testArray[i]) {
+                   result[result.length] = testArray[i]; //result[0] = testArray[i];
+                }
+            }
+           //return result;
+           return result;
+       }
+       var UserNumber = parseInt(prompt("Введите число, меньше которго нужно вывести"), 10);
+       console.log(lessThan(userNumber, arr))*/
+
+
+       var userData = [];
+       function requestUserData() {
+           var name = prompt("Введите имя");
+           var age = parseInt(prompt("Введите возраст"), 10);
+           var work = prompt("Введите место работы");
+
+           var result = {
+               name: name,
+               age: age,
+               work: work
+           }
+           return result;
+           /*return {
+               name, 
+               age, 
+               work
+           }*/
+
+       }
+       do {
+       userData[userData.length] = requestUserData();
+       } while (confirm("Ввести еще одного пользователя?")) /*untill Cansel*/
+       console.log(userData);
+    </script>
+</body>
+</html>
