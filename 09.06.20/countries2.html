@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страны</title>
+</head>
+<body>
+    <script>
+        var country = prompt("Введите страну");
+        var territory = parseInt(prompt("Введите площадь страны"), 10);
+        var population = parseInt(prompt("Введите численность населения"), 10); 
+        var array1Data = new Object();
+        var territoryData = new Object();
+        var populationData = new Object();
+        const minTerritory = 2000000;
+        const maxPopulation = 50000000;
+        function Array1() {
+            prompt("Введите страну");
+            prompt("Введите площадь страны");
+            prompt("Введите численность населения"); 
+            array1Data = {country:country, territory:territory, population:population};
+            return array1Data;
+        }
+        do {
+            Array1();
+        } while (confirm("Ввести еще одну страну?"));
+        function requestTerritoryData(a, b) {
+            for (var i = 0; i < territoryData.length; i++) {
+            if (a > b) {
+                territoryData = {country:country};
+                return territoryData;
+            } 
+        }
+        }
+        function requestPopulationData(c, d) {
+            for (var j = 0; j < populationData.length; j++) {
+            if (c < d) {
+                populationData = {country:country};
+                return populationData;
+            }
+        }
+        }
+        console.log(requestTerritoryData(territory, minTerritory));
+        console.log(requestPopulationData(population, maxPopulation));
+    </script>
+</body>
+</html>

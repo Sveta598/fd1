@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шахматная доска</title>
+    <link rel="stylesheet" href="flaticon/font/flaticon.css"> 
+    <style>
+    body {
+        margin: 0;
+        max-width: 100vmin;
+    }
+    .chessboard {
+        position: relative;
+        margin: 0;
+        max-width: 100vmin;
+        display: grid;
+        grid-template-columns: calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8) 
+        calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8);
+        grid-template-rows: calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8) 
+        calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8);
+    } 
+    .chessboard__cell_yellow {
+        background-color: yellow;
+    }
+    .chessboard__cell_brown {
+        background-color: brown;
+    }
+    .chessboard__figure_white {
+        color: white;
+    }
+    .active {
+        background-color: red;
+        border: 1px solid blue;
+    }
+    </style>
+</head>
+<body>
+    <div class="chessboard">
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-rook chessboard__figure"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-chess-1 chessboard__figure"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-chess-3 chessboard__figure"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-crown-1 chessboard__figure"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-chess-5 chessboard__figure"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-chess-3 chessboard__figure"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-chess-1 chessboard__figure"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-rook chessboard__figure"></i>
+        </div>
+
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-pawn-1 chessboard__figure"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-pawn-1 chessboard__figure"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-pawn-1 chessboard__figure"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-pawn-1 chessboard__figure"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-pawn-1 chessboard__figure"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-pawn-1 chessboard__figure"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-pawn-1 chessboard__figure"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-pawn-1 chessboard__figure"></i>
+        </div>
+
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white"></i>
+        </div>
+
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-rook chessboard__figure chessboard__figure_white"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-chess-1 chessboard__figure chessboard__figure_white"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-chess-3 chessboard__figure chessboard__figure_white"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-crown-1 chessboard__figure chessboard__figure_white"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-chess-5 chessboard__figure chessboard__figure_white"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-chess-3 chessboard__figure chessboard__figure_white"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_brown">
+            <i class="flaticon-chess-1 chessboard__figure chessboard__figure_white"></i>
+        </div>
+        <div class="chessboard__cell chessboard__cell_yellow">
+            <i class="flaticon-rook chessboard__figure chessboard__figure_white"></i>
+        </div>
+    </div>
+    <script>
+        var currentElement = null;
+        var cells = document.querySelectorAll(".chessboard__cell");
+        for (var i = 0; i < cells.length; i++) {
+            cells[i].addEventListener("click", function(e) {
+                if (currentElement === null) {
+                    currentElement = e.target;
+                    currentElement.classList.add("active");
+                } else {
+                    var tmpInnerHTML = currentElement.innerHTML;
+                    if (e.target.innerHTML !== null) {
+                        alert("В этой клетке уже есть фигура");
+                    } else {
+                    currentElement.innerHTML = e.target.innerHTML;
+                    e.target.innerHTML = tmpInnerHTML;
+                    currentElement.classList.remove("active");
+                    currentElement = null;
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шахматная доска</title>
+    <link rel="stylesheet" href="flaticon/font/flaticon.css"> 
+    <style>
+    body {
+        margin: 0;
+        max-width: 100vmin;
+    }
+    .chessboard {
+        position: relative;
+        margin: 0;
+        max-width: 100vmin;
+        display: grid;
+        grid-template-columns: calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8) 
+        calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8);
+        grid-template-rows: calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8) 
+        calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8) calc(100vmin / 8);
+    } 
+    .chessboard__cell_yellow {
+        background-color: yellow;
+    }
+    .chessboard__cell_brown {
+        background-color: brown;
+    }
+    .chessboard__figure {
+        position: absolute;
+    }
+    .chessboard__figure_white {
+        color: white;
+    }
+    .active {
+        background-color: red;
+        border: 1px solid blue;
+    }
+    </style>
+</head>
+<body>
+    <div class="chessboard">
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+        <div class="chessboard__cell chessboard__cell_brown"></div>
+        <div class="chessboard__cell chessboard__cell_yellow"></div>
+
+        <i class="flaticon-rook chessboard__figure" style="top: 0; left: 0;"></i>
+        <i class="flaticon-chess-1 chessboard__figure" style="top: 0; left: calc(100vmin / 8);"></i>
+        <i class="flaticon-chess-3 chessboard__figure" style="top: 0; left: calc(100vmin / 8 * 2);"></i>
+        <i class="flaticon-crown-1 chessboard__figure" style="top: 0; left: calc(100vmin / 8 * 3);"></i>
+        <i class="flaticon-chess-5 chessboard__figure" style="top: 0; left: calc(100vmin / 8 * 4);"></i>
+        <i class="flaticon-chess-3 chessboard__figure" style="top: 0; left: calc(100vmin / 8 * 5);"></i>
+        <i class="flaticon-chess-1 chessboard__figure" style="top: 0; left: calc(100vmin / 8 * 6);"></i>
+        <i class="flaticon-rook chessboard__figure" style="top: 0; left: calc(100vmin / 8 * 7);"></i>
+        <i class="flaticon-pawn-1 chessboard__figure" style="top: calc(100vmin / 8); left: 0"></i>
+        <i class="flaticon-pawn-1 chessboard__figure" style="top: calc(100vmin / 8); left: calc(100vmin / 8);"></i>
+        <i class="flaticon-pawn-1 chessboard__figure" style="top: calc(100vmin / 8); left: calc(100vmin / 8 * 2);"></i>
+        <i class="flaticon-pawn-1 chessboard__figure" style="top: calc(100vmin / 8); left: calc(100vmin / 8 * 3);"></i>
+        <i class="flaticon-pawn-1 chessboard__figure" style="top: calc(100vmin / 8); left: calc(100vmin / 8 * 4);"></i>
+        <i class="flaticon-pawn-1 chessboard__figure" style="top: calc(100vmin / 8); left: calc(100vmin / 8 * 5);"></i>
+        <i class="flaticon-pawn-1 chessboard__figure" style="top: calc(100vmin / 8); left: calc(100vmin / 8 * 6);"></i>
+        <i class="flaticon-pawn-1 chessboard__figure" style="top: calc(100vmin / 8); left: calc(100vmin / 8 * 7);"></i>
+        <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 6); left: 0"></i>
+        <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 6); left: calc(100vmin / 8);"></i>
+        <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 6); left: calc(100vmin / 8 * 2);"></i>
+        <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 6); left: calc(100vmin / 8 * 3);"></i>
+        <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 6); left: calc(100vmin / 8 * 4);"></i>
+        <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 6); left: calc(100vmin / 8 * 5);"></i>
+        <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 6); left: calc(100vmin / 8 * 6);"></i>
+        <i class="flaticon-pawn-1 chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 6); left: calc(100vmin / 8 * 7);"></i>
+        <i class="flaticon-rook chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 7); left: 0;"></i>
+        <i class="flaticon-chess-1 chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 7); left: calc(100vmin / 8);"></i>
+        <i class="flaticon-chess-3 chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 7); left: calc(100vmin / 8 * 2);"></i>
+        <i class="flaticon-crown-1 chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 7); left: calc(100vmin / 8 * 3);"></i>
+        <i class="flaticon-chess-5 chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 7); left: calc(100vmin / 8 * 4);"></i>
+        <i class="flaticon-chess-3 chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 7); left: calc(100vmin / 8 * 5);"></i>
+        <i class="flaticon-chess-1 chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 7); left: calc(100vmin / 8 * 6);"></i>
+        <i class="flaticon-rook chessboard__figure chessboard__figure_white" style="top: calc(100vmin / 8 * 7); left: calc(100vmin / 8 * 7);"></i>
+    </div>
+    <script>
+        var currentElement = null;
+        var figures = document.querySelectorAll(".chessboard__figure");
+        for (var i = 0; i < figures.length; i++) {
+            figures[i].addEventListener("click", function(e) {
+                if (currentElement === null) {
+                    currentElement = e.target;
+                    currentElement.classList.add("active");
+                } else {
+                    var tmpLeft = currentElement.style.left;
+                    currentElement.style.left = e.target.style.left;
+                    e.target.style.left = tmpLeft;
+                    var tmpTop = currentElement.style.top;
+                    currentElement.style.top = e.target.style.top;
+                    e.target.style.top = tmpTop;
+                    currentElement.classList.remove("active");
+                    currentElement = null;
+                }
+            });
+        }
+    </script>
+</body>
+</html>
