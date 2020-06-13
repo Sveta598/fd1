@@ -31,6 +31,7 @@
         }
 
         function requestTerritoryData() {
+            for (var i = 0; i < territoryData.length; i++) {
             if (territory > minTerritory) {
                 var result = {
                     country: country
@@ -38,8 +39,9 @@
                 return result;
             } 
         }
-
+        }
         function requestPopulationData() {
+            for (var j = 0; j < populationData.length; j++) {
             if (population < maxPopulation) {
                 var result = {
                     country: country
@@ -47,16 +49,21 @@
                 return result;
             }
         }
-
+        }
         do {
         userData[userData.length] = requestUserData();
         } while (confirm("Ввести еще одну страну?")) 
         
-        territoryData[territoryData.length] = requestTerritoryData();
-        populationData[populationData.length] = requestPopulationData();
-
+        
         console.log(territoryData);
         console.log(populationData);
+
+        /*for i = 0; i < territoryData.length; i++) {
+
+        }*/
+
+
+
     </script>
 </body>
 </html>
