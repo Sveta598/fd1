@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страны</title>
+</head>
+<body>
+    <script>
+        var userData = [];
+        var territoryData = [];
+        var populationData = [];
+        const minTerritory = 2000000;
+        const maxPopulation = 50000000;
+        // var country = prompt("Введите страну");
+        // var territory = parseInt(prompt("Введите площадь страны"), 10);
+        // var population = parseInt(prompt("Введите численность населения"), 10); 
+        function requestUserData() {
+            var country = prompt("Введите страну");
+            var territory = parseInt(prompt("Введите площадь страны"), 10);
+            var population = parseInt(prompt("Введите численность населения"), 10); 
+            var result = {
+               country: country, 
+               territory: territory,
+               population: population
+           }
+           /*console.log(result)*/
+           return result;
+        }
+        function requestTerritoryData() {
+            for (var i = 0; i < territoryData.length; i++) {
+            if (territory > minTerritory) {
+                var result = {
+                    country: country
+                }
+                return result;
+            } 
+        }
+        }
+        function requestPopulationData() {
+            for (var j = 0; j < populationData.length; j++) {
+            if (population < maxPopulation) {
+                var result = {
+                    country: country
+                }
+                return result;
+            }
+        }
+        }
+        do {
+            /*console.log(userData)*/
+            userData[userData.length] = requestUserData();
+            /*console.log(userData)*/
+        } while (confirm("Ввести еще одну страну?")) 
+        for (var i = 0; i < userData.length; i++) {
+            if (userData[i].territory > minTerritory) {
+                territoryData[territoryData.length] = userData[i];
+            }
+            if (userData[i].population < maxPopulation) {
+                populationData[populationData.length] = userData[i];
+            }
+        }
+        console.log(territoryData);
+        console.log(populationData);
+    </script>
+    </body>
+    </html>
